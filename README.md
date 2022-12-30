@@ -19,8 +19,30 @@
 | --------------- | ----------- | ---------- | ---- | ------- |
 | 自增            | Y-m-d H:M:S | float      | int  | int     |
 
-上述中数据使用随机数生成，插入30条数据，效果如下：
+## 快速开始
+> 使用anaconda创建python环境（可选），并进入该环境
 
-<img src="figs/data.png" alt="data" style="zoom:67%;" />
+```shell
+conda create -n pymysql python=3.8
+```
 
-可以设置参数sleep_interval来实现定时间隔插入。
+```
+conda activate pymysql
+```
+
+> 安装环境所需要的库
+
+```
+pip install -r requirement
+```
+
+> 生成10条数据，时间间隔为1s
+
+```shell
+python main.py --data_nums 10 --sleep_interval 1
+```
+
+![terminal](figs/terminal.png)
+
+<img src="figs/mysql-client.png" alt="mysql-client" style="zoom:67%;" />
+
